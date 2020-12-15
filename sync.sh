@@ -18,7 +18,7 @@ function chk_firewall() {
 	fi
 }
 #安装
-function install_sync(){
+function install_sync(){ 
 	mkdir -p /home/RslSync
 	cp mysync.sh /home/RslSync/
 	cd /home/RslSync
@@ -44,12 +44,7 @@ function install_sync(){
 	#获取IP
 	osip=$(curl -4s https://api.ip.sb/ip)
 	chk_firewall
-	echo "############################# 安装成功 #############################"
-	echo "本脚本为xiaoz博客脚本修改链接为国内可行版本"
-	echo "访问地址:http://${osip}:8888/"
-	echo "用户名:"${suser}
-	echo "密码:"${spass}
-	echo "帮助中心:https://www.xiaoz.me/archives/8219"
+  
 }
 
 #卸载
