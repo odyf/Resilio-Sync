@@ -22,7 +22,7 @@ function install_sync(){
 	mkdir -p /home/RslSync
 	cp mysync.sh /home/RslSync/
 	cd /home/RslSync
-	wget https://download-cdn.resilio.com/stable/linux-x64/resilio-sync_x64.tar.gz --no-check-certificate
+	wget https://gao4.coding.net/api/share/download/426663f4-692c-4675-a1d5-0fa4c81ff2d4 -O resilio-sync_x64.tar.gz
 	tar -zxf resilio-sync_x64.tar.gz
 	rm -rf resilio-sync_x64.tar.gz
 	./rslsync --dump-sample-config > sync.conf 
@@ -45,6 +45,7 @@ function install_sync(){
 	osip=$(curl -4s https://api.ip.sb/ip)
 	chk_firewall
 	echo "############################# 安装成功 #############################"
+	echo "本脚本为xiaoz博客脚本修改链接为国内可行版本"
 	echo "访问地址:http://${osip}:8888/"
 	echo "用户名:"${suser}
 	echo "密码:"${spass}

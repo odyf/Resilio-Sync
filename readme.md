@@ -1,7 +1,19 @@
 # Resilio Sync一键安装脚本
 
-### 注意
-* Resilio Sync已经被GFW和谐，国内VPS请不要使用该脚本。
+### 2020-12-15更新
+更换下载链接为国内coding网盘直链压缩包文件也是2020-12-15官网下载
+以方便国内使用
+### 使用
+### 安装方法
+```bash
+#安装必要的软件包
+yum -y install wget unzip
+#下载脚本
+wget https://github.com/odyf/Resilio-Sync/archive/master.zip
+#解压并安装
+unzip master.zip && cd Resilio-Sync-master && chmod +x *sync.sh && ./sync.sh
+```
+
 
 ### 要求
 * CentOS 6/7 X64
